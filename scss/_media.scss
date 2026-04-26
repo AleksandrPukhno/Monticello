@@ -1,0 +1,47 @@
+
+
+
+@media (max-width: 992px) {
+
+  a.nav__link::before {
+    display: none;
+  }
+
+  .socials__item {
+    display: none;
+ 
+}
+
+@media (max-width: 768px) {
+
+  a.nav__link::before {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .socials__item {
+    display: none;
+  }
+
+}
+
+
+
+@media screen and (max-width: 400px){
+  .sibebar {
+    width: 100%;
+  }
+
+    .nav__item {
+    display: none;
+  }
+
+  .socials__item {
+    display: none;
+  }
+
+}
+}

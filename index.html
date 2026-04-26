@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monticello</title>
+        <link rel="icon" href="./assets/icons/Logo.png">
+        <link rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__menu">
+                    <a class="header__logo" href="#">
+                        <img class="logo__image" src="./assets/icons/Logo.svg"
+                            alt="Company logo">
+                    </a>
+                    <nav class="nav">
+
+                        <ul class="sidebar">
+                            <li class="sidebar__item" onclick=hideSidebar()>
+                                <a href="#">
+                                    <svg width="24" height="24">
+                                        <use
+                                            xlink:href="./assets/icons/sprite.svg#menu2"
+                                            class="facebook">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="sidebar__link" href="#about">About
+                                    us</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="sidebar__link"
+                                    href="#projects">Projects</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="sidebar__link" href="#news">News</a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a class="sidebar__link"
+                                    href="#contact">Contact</a>
+                            </li>
+
+                            <li class="socials__item">
+                                <a class="socials__link" href="#">
+                                    <svg width="24" height="24">
+                                        <use
+                                            xlink:href="./assets/icons/sprite.svg#facebook"
+                                            class="facebook">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link" href="#">
+                                    <svg width="24" height="24">
+                                        <use
+                                            xlink:href="./assets/icons/sprite.svg#twich"
+                                            class="facebook">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link">
+                                    <svg width="24" height="24">
+                                        <use
+                                            xlink:href="./assets/icons/sprite.svg#instagram"
+                                            class="facebook">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#about">About us</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link"
+                                    href="#projects">Projects</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#news">News</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link"
+                                    href="#contact">Contact</a>
+                            </li>
+                            <li class="nav__item" onclick=showSidebar()>
+                                <a class="nav__link"
+                                    href="#">
+                                    <svg width="24" height="24">
+                                        <use class="menu__button"
+                                            xlink:href="./assets/icons/sprite.svg#menu1">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg width="24" height="24">
+                                    <use
+                                        xlink:href="./assets/icons/sprite.svg#facebook"
+                                        class="facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg width="24" height="24">
+                                    <use
+                                        xlink:href="./assets/icons/sprite.svg#twich"
+                                        class="facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg width="24" height="24">
+                                    <use
+                                        xlink:href="./assets/icons/sprite.svg#instagram"
+                                        class="facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="slider" id="about">
+
+                <div class="slider-slide">
+                    <div class="slider__content sl-content">
+                        <h2 class="sl-content__title">SIMPLE & MODERN</h2>
+                        <h3 class="sl-content__subtitle">WE MAKE THE WORLD
+                            BEAUTIFUL EVERYDAY</h3>
+                        <a href="#projects" class="slider__arrow">
+                            <svg width="40" height="40">
+                                <use
+                                    xlink:href="./assets/icons/sprite.svg#arrow"
+                                    class="arrow">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img src="./assets/img/1.jpg" alt
+                        class="slider-slide__img">
+                </div>
+                <div class="slider-slide">
+                    <div class="slider__content sl-content">
+                        <h2 class="sl-content__title">Minimalist Design</h2>
+                        <h3 class="sl-content__subtitle">WE MAKE THE WORLD
+                            BEAUTIFUL EVERYDAY</h3>
+                        <a href="#projects" class="slider__arrow">
+                            <svg width="40" height="40">
+                                <use
+                                    xlink:href="./assets/icons/sprite.svg#arrow"
+                                    class="arrow">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img src="./assets/img/2.jpg" alt
+                        class="slider-slide__img">
+                </div>
+                <div class="slider-slide">
+                    <div class="slider__content sl-content">
+                        <h2 class="sl-content__title">Elegant Simplicity</h2>
+                        <h3 class="sl-content__subtitle">WE MAKE THE WORLD
+                            BEAUTIFUL EVERYDAY</h3>
+                        <a href="#projects" class="slider__arrow">
+                            <svg width="40" height="40">
+                                <use
+                                    xlink:href="./assets/icons/sprite.svg#arrow"
+                                    class="arrow">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                    <img src="./assets/img/3.jpg" alt class="slider-slide__img">
+                </div>
+            </section>
+
+            <section class="section section--projects" id="projects">
+                <div class="container">
+                    <div class="section__header section-heading">
+                        <span class="section-heading__line"></span>
+                        <h2 class="section-heading__title">What We Do</h2>
+                    </div>
+
+                    <div class="section__content">
+                        <article class="feature-card">
+                            <div class="feature-card__media">
+                                <img class="feature-card__image"
+                                    src="./assets/img/what_we_do1.webp"
+                                    alt="Modern dome building">
+                            </div>
+
+                            <div class="feature-card__content">
+                                <p class="feature-card__eyebrow">One
+                                    World</p>
+                                <h3 class="feature-card__title">Trade
+                                    Center</h3>
+                                <p class="feature-card__text">
+                                    Increasing prosperity in our lives can
+                                    be accomplished by having the right
+                                    frame of mind.
+                                </p>
+                                <a
+                                    class="feature-card__button button button--outline"
+                                    href="#">More details</a>
+                                <address class="feature-card__meta">New York
+                                    City, United States</address>
+                            </div>
+                        </article>
+
+                        <article
+                            class="feature-card feature-card--reversed">
+                            <div class="feature-card__media">
+                                <img class="feature-card__image"
+                                    src="./assets/img/what_we_do2.webp"
+                                    alt="High-rise residential building">
+                            </div>
+
+                            <div class="feature-card__content">
+                                <p
+                                    class="feature-card__eyebrow">International</p>
+                                <h3 class="feature-card__title">Commerce
+                                    Centre</h3>
+                                <p class="feature-card__text">
+                                    Successful businesses have many things
+                                    in common, today we will look at the big
+                                    picture.
+                                </p>
+                                <a
+                                    class="feature-card__button button button--outline"
+                                    href="#">More details</a>
+                                <address class="feature-card__meta">Hong
+                                    Kong, China</address>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--news" id="news">
+                <div class="container">
+                    <div
+                        class="section__header section-heading section-heading--light">
+                        <span class="section-heading__line"
+                            aria-hidden="true"></span>
+                        <h2 class="section-heading__title">Latest News</h2>
+                    </div>
+
+                    <div class="posts">
+                        <article class="posts__item post-card">
+                            <img class="post-card__image"
+                                src="./assets/img/card1.webp"
+                                alt="Exterior of a modern white building">
+                            <div class="post-card__body">
+                                <h3 class="post-card__title">See the
+                                    unmatched beauty of the great.</h3>
+                                <p class="post-card__text">
+                                    Free directories are perfect for
+                                    customers that are searching for...
+                                </p>
+                            </div>
+                            <div class="post-card__footer author">
+                                <img class="author__avatar"
+                                    src="./assets/icons/photo1.png"
+                                    alt="Author portrait">
+                                <div class="author__info">
+                                    <p class="author__name">Alia Brun</p>
+                                    <time class="author__date"
+                                        datetime="2026-01-20">20 Jan
+                                        2026</time>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="posts__item post-card">
+                            <img class="post-card__image"
+                                src="./assets/img/card2.webp"
+                                alt="Office building from below">
+                            <div class="post-card__body">
+                                <h3 class="post-card__title">Effective
+                                    advertising pointers for your
+                                    business.</h3>
+                                <p class="post-card__text">
+                                    Having a home based business is a
+                                    wonderful asset to your life...
+                                </p>
+                            </div>
+                            <div class="post-card__footer author">
+                                <img class="author__avatar"
+                                    src="./assets/icons/photo2.png"
+                                    alt="Author portrait">
+                                <div class="author__info">
+                                    <p class="author__name">Dominic
+                                        Freeman</p>
+                                    <time class="author__date"
+                                        datetime="2026-12-13">13 Dec
+                                        2026</time>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="posts__item post-card">
+                            <img class="post-card__image"
+                                src="./assets/img/card3.webp"
+                                alt="White curved building facade">
+                            <div class="post-card__body">
+                                <h3 class="post-card__title">Hypnotize
+                                    yourself into the ghost.</h3>
+                                <p class="post-card__text">
+                                    There are many things that are important
+                                    to catalog design...
+                                </p>
+                            </div>
+                            <div class="post-card__footer author">
+                                <img class="author__avatar"
+                                    src="./assets/icons/photo3.png"
+                                    alt="Author portrait">
+                                <div class="author__info">
+                                    <p class="author__name">Alice Ward</p>
+                                    <time class="author__date"
+                                        datetime="2026-11-30">30 Nov
+                                        2026</time>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--gallery">
+                <div class="section__container container">
+                    <div class="section__header section-heading">
+                        <span class="section-heading__line"
+                            aria-hidden="true"></span>
+                        <h2 class="section-heading__title">Gallery</h2>
+                    </div>
+
+                    <div class="gallery">
+                        <a class="gallery__item gallery__item--large"
+                            href="#">
+                            <img class="gallery__image"
+                                src="./assets/images/gallery-1.jpg"
+                                alt="Large architectural photo">
+                        </a>
+                        <a class="gallery__item" href="#">
+                            <img class="gallery__image"
+                                src="./assets/images/gallery-2.jpg"
+                                alt="Glass building facade">
+                        </a>
+                        <a class="gallery__item" href="#">
+                            <img class="gallery__image"
+                                src="./assets/images/gallery-3.jpg"
+                                alt="Orange modern building">
+                        </a>
+                        <a class="gallery__item" href="#">
+                            <img class="gallery__image"
+                                src="./assets/images/gallery-4.jpg"
+                                alt="Curved skyscraper">
+                        </a>
+                        <a class="gallery__item" href="#">
+                            <img class="gallery__image"
+                                src="./assets/images/gallery-5.jpg"
+                                alt="Angular roof architecture">
+                        </a>
+                    </div>
+
+                    <div class="section__actions">
+                        <a class="button button--outline" href="#">See
+                            more</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--contact" id="contact">
+                <div class="section__map">
+                    <img class="section__map-image"
+                        src="./assets/images/map.jpg" alt="Map background">
+                </div>
+
+                <div class="container">
+                    <div class="contact-card">
+                        <div class="contact-card__header section-heading">
+                            <span class="section-heading__line"
+                                aria-hidden="true"></span>
+                            <h2 class="section-heading__title">Get In
+                                Touch</h2>
+                        </div>
+
+                        <div class="contact-card__body">
+                            <address
+                                class="contact-card__info contact-list">
+                                <p class="contact-list__item">91 Nolan
+                                    Extensions Suite 670</p>
+                                <p class="contact-list__item">+001 356 868
+                                    2454</p>
+                                <p
+                                    class="contact-list__item">mail@example.com</p>
+                                <p class="contact-list__item">From 07:05AM
+                                    to 19:30PM</p>
+                            </address>
+
+                            <form class="contact-card__form form" action="#"
+                                method="post">
+                                <label class="form__field field">
+                                    <span
+                                        class="field__label visually-hidden">Name</span>
+                                    <input class="field__input" type="text"
+                                        name="name" placeholder="Name"
+                                        required>
+                                </label>
+
+                                <label class="form__field field">
+                                    <span
+                                        class="field__label visually-hidden">Email</span>
+                                    <input class="field__input" type="email"
+                                        name="email" placeholder="Email"
+                                        required>
+                                </label>
+
+                                <button
+                                    class="form__submit button button--outline"
+                                    type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="site-footer__container container">
+                <a class="site-footer__logo logo" href="/">
+                    <img class="logo__image" src="./assets/images/logo.svg"
+                        alt="Company logo">
+                </a>
+
+                <ul class="site-footer__socials socials">
+                    <li class="socials__item">
+                        <a class="socials__link" href="#"></a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="#"></a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__link" href="#"></a>
+                    </li>
+                </ul>
+
+                <p class="site-footer__copyright">Copyrights © 2026. All
+                    rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/slick-slider.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

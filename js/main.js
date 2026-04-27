@@ -36,10 +36,36 @@ function closeModal() {
 // Close modal when clicking outside of content
 document.addEventListener('DOMContentLoaded', function() {
   const modal = document.getElementById('modal');
-  
-  modal.addEventListener('click', function(event) {
-    if (event.target === modal) {
-      closeModal();
-    }
-  });
+
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
+});
+
+// Modal functions
+function openPictures() {
+  const pictures = document.getElementById('pictures');
+  pictures.classList.add('active');
+}
+
+function closePictures() {
+  const pictures = document.getElementById('pictures');
+  pictures.classList.remove('active');
+}
+
+// Close modal when clicking outside of content
+document.addEventListener('DOMContentLoaded', function() {
+  const pictures = document.getElementById('pictures');
+
+  if (pictures) {
+    pictures.addEventListener('click', function(e) {
+      if (e.target === pictures) {
+        closePictures();
+      }
+    });
+  }
 });

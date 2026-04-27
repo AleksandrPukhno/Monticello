@@ -50,7 +50,7 @@
 
                             <li class="socials__item">
                                 <a class="socials__link" href="#">
-                                    <svg width="24" height="24">
+                                    <svg width="40" height="40">
                                         <use
                                             xlink:href="./assets/icons/sprite.svg#facebook"
                                             class="facebook">
@@ -60,7 +60,7 @@
                             </li>
                             <li class="socials__item">
                                 <a class="socials__link" href="#">
-                                    <svg width="24" height="24">
+                                    <svg width="40" height="40">
                                         <use
                                             xlink:href="./assets/icons/sprite.svg#twich"
                                             class="facebook">
@@ -70,7 +70,7 @@
                             </li>
                             <li class="socials__item">
                                 <a class="socials__link">
-                                    <svg width="24" height="24">
+                                    <svg width="40" height="40">
                                         <use
                                             xlink:href="./assets/icons/sprite.svg#instagram"
                                             class="facebook">
@@ -111,7 +111,7 @@
                     <ul class="socials">
                         <li class="socials__item">
                             <a class="socials__link" href="#">
-                                <svg width="24" height="24">
+                                <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#facebook"
                                         class="facebook">
@@ -121,7 +121,7 @@
                         </li>
                         <li class="socials__item">
                             <a class="socials__link" href="#">
-                                <svg width="24" height="24">
+                                <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#twich"
                                         class="facebook">
@@ -131,7 +131,7 @@
                         </li>
                         <li class="socials__item">
                             <a class="socials__link" href="#">
-                                <svg width="24" height="24">
+                                <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#instagram"
                                         class="facebook">
@@ -275,6 +275,7 @@
                             </div>
                         </article>
                     </div>
+
                 </div>
 
                 <div class="modal" id="modal">
@@ -412,101 +413,142 @@
                             </div>
                         </div>
                     </div>
+
+                    <button class="slick-arrow prev">
+                        <svg
+                            width="40" height="40">
+                            <use
+                                xlink:href="./assets/icons/sprite.svg#arrow"
+                                class="arrow">
+                            </use>
+                        </svg>
+                    </button>
+
+                    <button class="slick-arrow next">
+                        <svg
+                            width="40" height="40">
+                            <use
+                                xlink:href="./assets/icons/sprite.svg#arrow"
+                                class="arrow">
+                            </use>
+                        </svg>
+                    </button>
                 </div>
             </section>
 
             <section class="section section--gallery">
-                <div class="section__container container">
-                    <div class="section__header section-heading">
-                        <span class="section-heading__line"
-                            aria-hidden="true"></span>
-                        <h2 class="section-heading__title">Gallery</h2>
+                <div class="container">
+                    <div class="section__header">
+                        <h2 class="section__header__title">Gallery</h2>
                     </div>
 
                     <div class="gallery">
-                        <a class="gallery__item gallery__item--large"
-                            href="#">
+                        <a class="gallery__item gallery__item--col"
+                            href>
                             <img class="gallery__image"
-                                src="./assets/images/gallery-1.jpg"
+                                src="./assets/img/gallery1.webp"
                                 alt="Large architectural photo">
                         </a>
-                        <a class="gallery__item" href="#">
+                        <a class="gallery__item-1" href>
                             <img class="gallery__image"
-                                src="./assets/images/gallery-2.jpg"
+                                src="./assets/img/gallery2.webp"
                                 alt="Glass building facade">
                         </a>
-                        <a class="gallery__item" href="#">
+                        <a class="gallery__item-2" href>
                             <img class="gallery__image"
-                                src="./assets/images/gallery-3.jpg"
+                                src="./assets/img/gallery3.webp"
                                 alt="Orange modern building">
                         </a>
-                        <a class="gallery__item" href="#">
+                        <a class="gallery__item-3" href>
                             <img class="gallery__image"
-                                src="./assets/images/gallery-4.jpg"
+                                src="./assets/img/gallery4.webp"
                                 alt="Curved skyscraper">
                         </a>
-                        <a class="gallery__item" href="#">
+                        <a class="gallery__item-4" href>
                             <img class="gallery__image"
-                                src="./assets/images/gallery-5.jpg"
+                                src="./assets/img/gallery5.webp"
                                 alt="Angular roof architecture">
                         </a>
                     </div>
 
-                    <div class="section__actions">
-                        <a class="button button--outline" href="#">See
-                            more</a>
+                    <button class="gallery__btn" onclick="openPictures()">See
+                        more</button>
+
+                    <div class="pictures" id="pictures">
+                        <div class="pictures__content">
+                            <button class="pictures__close"
+                                onclick="closePictures()">×</button>
+
+                            <div class="pictures__gallery">
+                                <img src="./assets/img/p1.jpg" alt>
+                                <img src="./assets/img/p2.jpg" alt>
+                                <img src="./assets/img/p3.jpg" alt>
+                                <img src="./assets/img/p4.jpg" alt>
+                                <img src="./assets/img/p5.jpg" alt>
+                                <img src="./assets/img/p6.jpg" alt>
+                                <img src="./assets/img/p7.jpg" alt>
+                                <img src="./assets/img/p8.jpg" alt>
+                                <img src="./assets/img/p9.jpg" alt>
+                            </div>
+
+                            <button class="pictures__button"
+                                onclick="closePictures()">Close</button>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section class="section section--contact" id="contact">
                 <div class="section__map">
-                    <img class="section__map-image"
-                        src="./assets/images/map.jpg" alt="Map background">
+                    <div class="section__map-marker"></div>
                 </div>
 
                 <div class="container">
-                    <div class="contact-card">
-                        <div class="contact-card__header section-heading">
-                            <span class="section-heading__line"
+
+                    <div class="contact">
+                        <div class="contact__card__header">
+                            <span class="section__card__line"
                                 aria-hidden="true"></span>
-                            <h2 class="section-heading__title">Get In
+                            <h2 class="section__card__title">Get In
                                 Touch</h2>
                         </div>
 
-                        <div class="contact-card__body">
-                            <address
-                                class="contact-card__info contact-list">
-                                <p class="contact-list__item">91 Nolan
-                                    Extensions Suite 670</p>
-                                <p class="contact-list__item">+001 356 868
-                                    2454</p>
-                                <p
-                                    class="contact-list__item">mail@example.com</p>
-                                <p class="contact-list__item">From 07:05AM
-                                    to 19:30PM</p>
+                        <div class="contact__card__body">
+                            <address class="contact__info">
+                                <p class="contact__item contact__item--location">
+                                    91 Nolan Extensions Suite 670
+                                </p>
+                                <p class="contact__item contact__item--phone">
+                                    +001 356 868 2454
+                                </p>
+                                <p class="contact__item contact__item--email">
+                                    montichello@service.com
+                                </p>
+                                <p class="contact__item contact__item--time">
+                                    From 07:05AM to 19:30PM
+                                </p>
                             </address>
 
-                            <form class="contact-card__form form" action="#"
+                            <form class="contact__form" action="#"
                                 method="post">
-                                <label class="form__field field">
+                                <label class="form__field">
                                     <span
                                         class="field__label visually-hidden">Name</span>
                                     <input class="field__input" type="text"
-                                        name="name" placeholder="Name"
+                                        name="name" placeholder="Your Name"
                                         required>
                                 </label>
 
-                                <label class="form__field field">
+                                <label class="form__field">
                                     <span
                                         class="field__label visually-hidden">Email</span>
                                     <input class="field__input" type="email"
-                                        name="email" placeholder="Email"
+                                        name="email" placeholder="Your Email"
                                         required>
                                 </label>
 
                                 <button
-                                    class="form__submit button button--outline"
+                                    class="form__submit"
                                     type="submit">Submit</button>
                             </form>
                         </div>
@@ -515,27 +557,50 @@
             </section>
         </main>
 
-        <footer class="site-footer">
-            <div class="site-footer__container container">
-                <a class="site-footer__logo logo" href="/">
-                    <img class="logo__image" src="./assets/images/logo.svg"
-                        alt="Company logo">
-                </a>
+        <footer class="footer">
+            <div class="container">
 
-                <ul class="site-footer__socials socials">
-                    <li class="socials__item">
-                        <a class="socials__link" href="#"></a>
-                    </li>
-                    <li class="socials__item">
-                        <a class="socials__link" href="#"></a>
-                    </li>
-                    <li class="socials__item">
-                        <a class="socials__link" href="#"></a>
-                    </li>
-                </ul>
+                <div class="footer__contacts">
+                    <a class="footer__logo logo" href="/">
+                        <img class="logo__image" src="./assets/icons/Logo.svg"
+                            alt="Company logo">
+                    </a>
 
-                <p class="site-footer__copyright">Copyrights © 2026. All
-                    rights reserved.</p>
+                    <ul class="footer__socials socials">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg width="40" height="40">
+                                    <use
+                                        xlink:href="./assets/icons/sprite.svg#facebook"
+                                        class="facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg width="40" height="40">
+                                    <use
+                                        xlink:href="./assets/icons/sprite.svg#twich"
+                                        class="facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link">
+                                <svg width="40" height="40">
+                                    <use
+                                        xlink:href="./assets/icons/sprite.svg#instagram"
+                                        class="facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="footer__copyright">Copyrights © 2026 Montichello</p>
             </div>
         </footer>
 

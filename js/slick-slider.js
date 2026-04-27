@@ -28,3 +28,14 @@ $(document).ready(function () {
         ]
     });
 });
+
+$(document).ready(function(){
+  $('.slider-news').slick({
+    autoplay: true,
+        autoplaySpeed: 4500,
+        slidesToShow: 3,
+        speed: 1400,
+        arrows: false,
+        dots: true,
+  });
+});

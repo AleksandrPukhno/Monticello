@@ -21,3 +21,25 @@ function hideSidebar() {
       header.classList.remove('scrolled');
     }
   });
+
+// Modal functions
+function openModal() {
+  const modal = document.getElementById('modal');
+  modal.classList.add('active');
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.classList.remove('active');
+}
+
+// Close modal when clicking outside of content
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('modal');
+  
+  modal.addEventListener('click', function(event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+});

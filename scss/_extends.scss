@@ -1,0 +1,20 @@
+%btn-view {
+    font-family: 'Montserrat Regular';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid black;
+    padding: 15px 30px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: white;
+      border-color: transparent;
+      background: linear-gradient(150deg, #55b8ff 0%, #7e5aff 70%);
+      background-size: 200% 200%;
+      animation: gradientShift 2s ease-in-out infinite;
+    }
+  }
+

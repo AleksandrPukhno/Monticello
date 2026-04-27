@@ -162,8 +162,8 @@
                             </svg>
                         </a>
                     </div>
-                    <img src="./assets/img/1.jpg" alt
-                        class="slider-slide__img">
+                    <img src="./assets/img/1.webp"
+                        class="slider-slide__img" alt="building">
                 </div>
                 <div class="slider-slide">
                     <div class="slider__content sl-content">
@@ -179,8 +179,8 @@
                             </svg>
                         </a>
                     </div>
-                    <img src="./assets/img/2.jpg" alt
-                        class="slider-slide__img">
+                    <img src="./assets/img/2.webp"
+                        class="slider-slide__img" alt="building">
                 </div>
                 <div class="slider-slide">
                     <div class="slider__content sl-content">
@@ -196,15 +196,15 @@
                             </svg>
                         </a>
                     </div>
-                    <img src="./assets/img/3.jpg" alt class="slider-slide__img">
+                    <img src="./assets/img/3.webp" class="slider-slide__img"
+                        alt="building">
                 </div>
             </section>
 
             <section class="section section--projects" id="projects">
                 <div class="container">
-                    <div class="section__header section-heading">
-                        <span class="section-heading__line"></span>
-                        <h2 class="section-heading__title">What We Do</h2>
+                    <div class="section__header">
+                        <h2 class="section__header__title">What We Do</h2>
                     </div>
 
                     <div class="section__content">
@@ -216,20 +216,28 @@
                             </div>
 
                             <div class="feature-card__content">
-                                <p class="feature-card__eyebrow">One
+                                <p class="feature-card__subtitle">One
                                     World</p>
                                 <h3 class="feature-card__title">Trade
                                     Center</h3>
                                 <p class="feature-card__text">
-                                    Increasing prosperity in our lives can
-                                    be accomplished by having the right
-                                    frame of mind.
+                                    Increasing prosperity in our lives can be
+                                    accomplished by having the right frame of
+                                    mind. The truth is, our thoughts are very
+                                    powerful.
                                 </p>
-                                <a
-                                    class="feature-card__button button button--outline"
-                                    href="#">More details</a>
-                                <address class="feature-card__meta">New York
-                                    City, United States</address>
+                                <a class="feature-card__button"
+                                    href="#"
+                                    onclick="openModal(); return false;">More
+                                    details</a>
+                                <address class="feature-card__meta"><svg
+                                        width="9" height="13">
+                                        <use
+                                            xlink:href="./assets/icons/sprite.svg#location"
+                                            class="arrow">
+                                        </use>
+                                    </svg>New York City, United States - 1776
+                                    feet</address>
                             </div>
                         </article>
 
@@ -243,48 +251,79 @@
 
                             <div class="feature-card__content">
                                 <p
-                                    class="feature-card__eyebrow">International</p>
+                                    class="feature-card__subtitle">International</p>
                                 <h3 class="feature-card__title">Commerce
                                     Centre</h3>
                                 <p class="feature-card__text">
-                                    Successful businesses have many things
-                                    in common, today we will look at the big
-                                    picture.
+                                    Successful businesses have many things in
+                                    common, today we’ll look at the big 'R' of
+                                    recognition and how a digital advertising
+                                    network may help.
                                 </p>
                                 <a
-                                    class="feature-card__button button button--outline"
-                                    href="#">More details</a>
-                                <address class="feature-card__meta">Hong
-                                    Kong, China</address>
+                                    class="feature-card__button"
+                                    href="#"
+                                    onclick="openModal(); return false;">More
+                                    details</a>
+                                <address class="feature-card__meta"><svg
+                                        width="9" height="13">
+                                        <use
+                                            xlink:href="./assets/icons/sprite.svg#location"
+                                            class="arrow">
+                                        </use>
+                                    </svg>Hong Kong - 1588 feet</address>
                             </div>
                         </article>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal">
+                    <div class="modal__content">
+                        <button class="modal__close"
+                            onclick="closeModal()">×</button>
+                        <h2 class="modal__title">Project Details</h2>
+                        <p class="modal__text">
+                            This is a premium architectural project showcasing
+                            innovative design and modern construction
+                            techniques. Our team has worked extensively to
+                            create a landmark structure that combines
+                            functionality with aesthetic excellence.
+                        </p>
+                        <p class="modal__text">
+                            Location: <strong>New York City, United
+                                States</strong>
+                        </p>
+                        <p class="modal__text">
+                            Project Status: <strong>Completed</strong>
+                        </p>
+                        <button class="modal__button"
+                            onclick="closeModal()">Close</button>
                     </div>
                 </div>
             </section>
 
             <section class="section section--news" id="news">
                 <div class="container">
+
                     <div
-                        class="section__header section-heading section-heading--light">
-                        <span class="section-heading__line"
-                            aria-hidden="true"></span>
-                        <h2 class="section-heading__title">Latest News</h2>
+                        class="section__news">
+                        <h2 class="section__news__title">Latest News</h2>
                     </div>
 
-                    <div class="posts">
-                        <article class="posts__item post-card">
-                            <img class="post-card__image"
+                    <div class="slider-news posts">
+                        <div class="post__card">
+                            <img class="post__card__image"
                                 src="./assets/img/card1.webp"
                                 alt="Exterior of a modern white building">
-                            <div class="post-card__body">
-                                <h3 class="post-card__title">See the
+                            <div class="post__card__body">
+                                <h3 class="post__card__title">See the
                                     unmatched beauty of the great.</h3>
-                                <p class="post-card__text">
+                                <p class="post__card__text">
                                     Free directories are perfect for
                                     customers that are searching for...
                                 </p>
                             </div>
-                            <div class="post-card__footer author">
+                            <div class="post__card__footer author">
                                 <img class="author__avatar"
                                     src="./assets/icons/photo1.png"
                                     alt="Author portrait">
@@ -295,22 +334,21 @@
                                         2026</time>
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="posts__item post-card">
-                            <img class="post-card__image"
+                        <div class="post__card">
+                            <img class="post__card__image"
                                 src="./assets/img/card2.webp"
                                 alt="Office building from below">
-                            <div class="post-card__body">
-                                <h3 class="post-card__title">Effective
-                                    advertising pointers for your
-                                    business.</h3>
-                                <p class="post-card__text">
+                            <div class="post__card__body">
+                                <h3 class="post__card__title">EFFECTIVE
+                                    ADVERTISING POINTERS.</h3>
+                                <p class="post__card__text">
                                     Having a home based business is a
                                     wonderful asset to your life...
                                 </p>
                             </div>
-                            <div class="post-card__footer author">
+                            <div class="post__card__footer author">
                                 <img class="author__avatar"
                                     src="./assets/icons/photo2.png"
                                     alt="Author portrait">
@@ -322,21 +360,21 @@
                                         2026</time>
                                 </div>
                             </div>
-                        </article>
+                        </div>
 
-                        <article class="posts__item post-card">
-                            <img class="post-card__image"
+                        <div class="post__card">
+                            <img class="post__card__image"
                                 src="./assets/img/card3.webp"
                                 alt="White curved building facade">
-                            <div class="post-card__body">
-                                <h3 class="post-card__title">Hypnotize
+                            <div class="post__card__body">
+                                <h3 class="post__card__title">Hypnotize
                                     yourself into the ghost.</h3>
-                                <p class="post-card__text">
+                                <p class="post__card__text">
                                     There are many things that are important
                                     to catalog design...
                                 </p>
                             </div>
-                            <div class="post-card__footer author">
+                            <div class="post__card__footer author">
                                 <img class="author__avatar"
                                     src="./assets/icons/photo3.png"
                                     alt="Author portrait">
@@ -347,7 +385,32 @@
                                         2026</time>
                                 </div>
                             </div>
-                        </article>
+                        </div>
+                        <div class="post__card">
+                            <img class="post__card__image"
+                                src="./assets/img/gallery4.webp"
+                                alt="Office building from below">
+                            <div class="post__card__body">
+                                <h3 class="post__card__title">POWERFUL REAL
+                                    ESTATE PROMOTION TIPS.</h3>
+                                <p class="post__card__text">
+                                    Having a home based business is a
+                                    wonderful asset to your life...
+                                </p>
+                            </div>
+                            <div class="post__card__footer author">
+                                <img class="author__avatar"
+                                    src="./assets/icons/photo2.png"
+                                    alt="Author portrait">
+                                <div class="author__info">
+                                    <p class="author__name">Michel
+                                        Woods</p>
+                                    <time class="author__date"
+                                        datetime="2026-12-13">23 Oct
+                                        2026</time>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

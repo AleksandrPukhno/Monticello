@@ -6,9 +6,11 @@
         <title>Monticello</title>
         <link rel="icon" href="./assets/icons/Logo.png">
         <link rel="stylesheet"
-            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <link rel="stylesheet"
-            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
@@ -449,22 +451,22 @@
                                 src="./assets/img/gallery1.webp"
                                 alt="Large architectural photo">
                         </a>
-                        <a class="gallery__item-1" href>
+                        <a class="gallery__item-1">
                             <img class="gallery__image"
                                 src="./assets/img/gallery2.webp"
                                 alt="Glass building facade">
                         </a>
-                        <a class="gallery__item-2" href>
+                        <a class="gallery__item-2">
                             <img class="gallery__image"
                                 src="./assets/img/gallery3.webp"
                                 alt="Orange modern building">
                         </a>
-                        <a class="gallery__item-3" href>
+                        <a class="gallery__item-3">
                             <img class="gallery__image"
                                 src="./assets/img/gallery4.webp"
                                 alt="Curved skyscraper">
                         </a>
-                        <a class="gallery__item-4" href>
+                        <a class="gallery__item-4">
                             <img class="gallery__image"
                                 src="./assets/img/gallery5.webp"
                                 alt="Angular roof architecture">
@@ -499,10 +501,7 @@
             </section>
 
             <section class="section section--contact" id="contact">
-                <div class="section__map">
-                    <div class="section__map-marker"></div>
-                </div>
-
+                <div id="map"></div>
                 <div class="container">
 
                     <div class="contact">
@@ -515,7 +514,8 @@
 
                         <div class="contact__card__body">
                             <address class="contact__info">
-                                <p class="contact__item contact__item--location">
+                                <p
+                                    class="contact__item contact__item--location">
                                     91 Nolan Extensions Suite 670
                                 </p>
                                 <p class="contact__item contact__item--phone">
@@ -561,14 +561,14 @@
             <div class="container">
 
                 <div class="footer__contacts">
-                    <a class="footer__logo logo" href="/">
+                    <a class="footer__logo logo" href="#">
                         <img class="logo__image" src="./assets/icons/Logo.svg"
                             alt="Company logo">
                     </a>
 
                     <ul class="footer__socials socials">
                         <li class="socials__item">
-                            <a class="socials__link" href="#">
+                            <a class="socials__link">
                                 <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#facebook"
@@ -578,7 +578,7 @@
                             </a>
                         </li>
                         <li class="socials__item">
-                            <a class="socials__link" href="#">
+                            <a class="socials__link">
                                 <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#twich"
@@ -600,7 +600,7 @@
                     </ul>
                 </div>
 
-                <p class="footer__copyright">Copyrights © 2026 Montichello</p>
+                <p class="footer__copyright">Copyrights © 2026 Monticello</p>
             </div>
         </footer>
 
@@ -608,6 +608,7 @@
         <script
             src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="./js/slick-slider.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         <script src="./js/main.js"></script>
     </body>
 </html>

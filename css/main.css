@@ -343,36 +343,6 @@ template {
   font-style: normal;
   font-display: swap;
 }
-@media (max-width: 992px) {
-  a.nav__link::before {
-    display: none;
-  }
-  .socials__item {
-    display: none;
-  }
-}
-@media (max-width: 992px) and (max-width: 768px) {
-  a.nav__link::before {
-    display: none;
-  }
-  .nav {
-    display: none;
-  }
-  .socials__item {
-    display: none;
-  }
-}
-@media screen and (max-width: 992px) and (max-width: 400px) {
-  .sibebar {
-    width: 100%;
-  }
-  .nav__item {
-    display: none;
-  }
-  .socials__item {
-    display: none;
-  }
-}
 .slider {
   position: relative;
   z-index: 1;
@@ -489,12 +459,12 @@ template {
 }
 
 .prev {
-  left: -90px;
+  left: -50px;
   transform: rotate(90deg);
 }
 
 .next {
-  right: -90px;
+  right: -50px;
   transform: rotate(270deg);
 }
 
@@ -561,10 +531,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
 }
 
 a {
@@ -684,6 +658,14 @@ a {
   color: #ffffff;
 }
 
+.slider:not(.slick-initialized) .slider-slide {
+  display: none;
+}
+
+.slider:not(.slick-initialized) .slider-slide:first-child {
+  display: block;
+}
+
 .slider__arrow {
   z-index: 10;
   position: fixed;
@@ -773,8 +755,8 @@ a {
   position: absolute;
   top: -57px;
   right: -215px;
-  width: 585px;
-  height: 470px;
+  width: clamp(300px, 40vw, 585px);
+  height: clamp(250px, 35vw, 470px);
   background: #7e5aff;
   z-index: -1;
 }
@@ -996,8 +978,12 @@ a {
   transform: translateX(-50%);
   width: min(100%, 770px);
   background: #ffffff;
+  background-image: url(../assets/img/city.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
   box-shadow: 0 24px 48px rgba(44, 64, 88, 0.12);
   padding: 58px 60px 68px;
+  z-index: 2;
 }
 .contact__card__header {
   text-align: center;
@@ -1032,7 +1018,7 @@ a {
   color: #7e5aff;
 }
 .contact__item--location::before {
-  content: "●";
+  content: "📍";
 }
 .contact__item--phone::before {
   content: "☎";
@@ -1097,14 +1083,15 @@ a {
 }
 
 .section--contact {
-  background-color: rgb(211, 184, 237);
-  height: 700px;
   position: relative;
 }
 
 .footer {
-  background: linear-gradient(100deg, #55b8ff 0%, #7e5aff 70%);
   height: 549px;
+  background-image: linear-gradient(100deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 80%), url(../assets/img/bgfooter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .footer__contacts {
   display: flex;
@@ -1119,4 +1106,27 @@ a {
   color: #ffffff;
   max-width: 770px;
   margin: 0 auto;
+}
+
+#map {
+  height: 700px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.leaflet-popup-content-wrapper {
+  box-shadow: 30px -20px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px; /* Робимо кути гострими, як на скріншоті */
+  background: #ffffff;
+  padding: 1px;
+}
+
+.leaflet-popup-tip {
+  box-shadow: none;
+  background: #ffffff;
+}
+
+.leaflet-popup {
+  margin-left: -20px;
 }/*# sourceMappingURL=main.css.map */

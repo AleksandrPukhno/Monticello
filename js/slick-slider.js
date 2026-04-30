@@ -10,10 +10,10 @@ $(document).ready(function () {
 
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1025,
         settings: {
-          dots: false,
-          arrows: true,
+          dots: true,
+          arrows: false,
           autoplaySpeed: 2000,
         },
       },
@@ -39,19 +39,21 @@ $(document).ready(function () {
     dots: true,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
-     responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+        },
       },
-    },
-    {
-      breakpoint: 600, 
-      settings: {
-        slidesToShow: 1,
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
       },
-    },
-  ],
+    ],
   });
 });

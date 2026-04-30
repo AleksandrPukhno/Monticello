@@ -10,7 +10,7 @@
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
         <link rel="stylesheet"
-            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
@@ -22,14 +22,12 @@
                             alt="Company logo">
                     </a>
                     <nav class="nav">
-
                         <ul class="sidebar">
                             <li class="sidebar__item" onclick=hideSidebar()>
-                                <a href="#">
-                                    <svg width="24" height="24">
+                                <a class="nav__link">
+                                    <svg width="40" height="40">
                                         <use
-                                            xlink:href="./assets/icons/sprite.svg#menu2"
-                                            class="facebook">
+                                            xlink:href="./assets/icons/sprite.svg#menu2">
                                         </use>
                                     </svg>
                                 </a>
@@ -49,36 +47,39 @@
                                 <a class="sidebar__link"
                                     href="#contact">Contact</a>
                             </li>
-
-                            <li class="socials__item">
-                                <a class="socials__link" href="#">
-                                    <svg width="40" height="40">
-                                        <use
-                                            xlink:href="./assets/icons/sprite.svg#facebook"
-                                            class="facebook">
-                                        </use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a class="socials__link" href="#">
-                                    <svg width="40" height="40">
-                                        <use
-                                            xlink:href="./assets/icons/sprite.svg#twich"
-                                            class="facebook">
-                                        </use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a class="socials__link">
-                                    <svg width="40" height="40">
-                                        <use
-                                            xlink:href="./assets/icons/sprite.svg#instagram"
-                                            class="facebook">
-                                        </use>
-                                    </svg>
-                                </a>
+                            <li class="sidebar__item">
+                                <ul class="sidebar__socials">
+                                    <li class="socials__item">
+                                        <a class="socials__link"
+                                            href="https://facebook.com">
+                                            <svg width="40" height="40">
+                                                <use
+                                                    xlink:href="./assets/icons/sprite.svg#facebook">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a class="socials__link"
+                                            href="https://twitter.com">
+                                            <svg width="40" height="40">
+                                                <use
+                                                    xlink:href="./assets/icons/sprite.svg#twich">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a class="socials__link"
+                                            href="https://instagram.com">
+                                            <svg width="40" height="40">
+                                                <use
+                                                    xlink:href="./assets/icons/sprite.svg#instagram">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -98,9 +99,8 @@
                                     href="#contact">Contact</a>
                             </li>
                             <li class="nav__item" onclick=showSidebar()>
-                                <a class="nav__link"
-                                    href="#">
-                                    <svg width="24" height="24">
+                                <a class="nav__link">
+                                    <svg width="40" height="40">
                                         <use class="menu__button"
                                             xlink:href="./assets/icons/sprite.svg#menu1">
                                         </use>
@@ -112,7 +112,8 @@
 
                     <ul class="socials">
                         <li class="socials__item">
-                            <a class="socials__link" href="#">
+                            <a class="socials__link"
+                                href="https://facebook.com">
                                 <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#facebook"
@@ -122,7 +123,7 @@
                             </a>
                         </li>
                         <li class="socials__item">
-                            <a class="socials__link" href="#">
+                            <a class="socials__link" href="https://twitter.com">
                                 <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#twich"
@@ -132,7 +133,8 @@
                             </a>
                         </li>
                         <li class="socials__item">
-                            <a class="socials__link" href="#">
+                            <a class="socials__link"
+                                href="https://instagram.com">
                                 <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#instagram"
@@ -445,8 +447,7 @@
                     </div>
 
                     <div class="gallery">
-                        <a class="gallery__item gallery__item--col"
-                            href>
+                        <a class="gallery__item gallery__item--col">
                             <img class="gallery__image"
                                 src="./assets/img/gallery1.webp"
                                 alt="Large architectural photo">
@@ -505,6 +506,8 @@
                 <div class="container">
 
                     <div class="contact">
+                        <button class="contact__toggle-btn"
+                            onclick="toggleContactForm()">Get In Touch</button>
                         <div class="contact__card__header">
                             <span class="section__card__line"
                                 aria-hidden="true"></span>
@@ -568,7 +571,8 @@
 
                     <ul class="footer__socials socials">
                         <li class="socials__item">
-                            <a class="socials__link">
+                            <a class="socials__link"
+                                href="https://facebook.com">
                                 <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#facebook"
@@ -578,7 +582,7 @@
                             </a>
                         </li>
                         <li class="socials__item">
-                            <a class="socials__link">
+                            <a class="socials__link" href="https://twitter.com">
                                 <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#twich"
@@ -588,7 +592,8 @@
                             </a>
                         </li>
                         <li class="socials__item">
-                            <a class="socials__link">
+                            <a class="socials__link"
+                                href="https://instagram.com">
                                 <svg width="40" height="40">
                                     <use
                                         xlink:href="./assets/icons/sprite.svg#instagram"

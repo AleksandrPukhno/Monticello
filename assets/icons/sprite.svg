@@ -15,11 +15,11 @@
 </symbol>
 
 
-<symbol id="menu1" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+<symbol id="menu1" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff">
 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
 </symbol>
 
-<symbol id="menu2" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
+<symbol id="menu2" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff">
 <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
 </symbol>
 

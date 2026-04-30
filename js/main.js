@@ -1,16 +1,18 @@
 'use strict';
 
-
+// Відкриває бокове меню.
 function showSidebar() {
     const sideBar = document.querySelector('.sidebar');
     sideBar.classList.add('sidebar--open');
 }
 
+// Закриває бокове меню.
 function hideSidebar() {
     const hideSidebar = document.querySelector('.sidebar');
     hideSidebar.classList.remove('sidebar--open');
 }
 
+// Закриває бокове меню при кліку поза його межами.
 document.addEventListener('click', function (e) {
   const sidebar = document.querySelector('.sidebar');
   const menuButton = document.querySelector('[onclick="showSidebar()"]');
@@ -27,6 +29,7 @@ document.addEventListener('click', function (e) {
   const header = document.querySelector('.header');
   const slider = document.querySelector('.slider');
 
+  // Змінює стиль header після прокрутки першого екрана.
   window.addEventListener('scroll', () => {
     if (window.scrollY > slider.offsetHeight - header.offsetHeight) {
       header.classList.add('scrolled');
@@ -35,16 +38,19 @@ document.addEventListener('click', function (e) {
     }
   });
 
+// Відкриває модальне вікно з деталями проєкту.
 function openModal() {
   const modal = document.getElementById('modal');
   modal.classList.add('active');
 }
 
+// Закриває модальне вікно з деталями проєкту.
 function closeModal() {
   const modal = document.getElementById('modal');
   modal.classList.remove('active');
 }
 
+// Закриває модальне вікно при кліку на затемнений фон.
 document.addEventListener('DOMContentLoaded', function() {
   const modal = document.getElementById('modal');
 
@@ -57,17 +63,19 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-
+// Відкриває спливаюче вікно галереї "See more".
 function openPictures() {
   const pictures = document.getElementById('pictures');
   pictures.classList.add('active');
 }
 
+// Закриває спливаюче вікно галереї "See more".
 function closePictures() {
   const pictures = document.getElementById('pictures');
   pictures.classList.remove('active');
 }
 
+// Закриває галерею при кліку на затемнений фон.
 document.addEventListener('DOMContentLoaded', function() {
   const pictures = document.getElementById('pictures');
 
@@ -83,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const lat = 40.7459;
 const lng = -74.0048;
 
+// Ініціалізує карту Leaflet із вибраною локацією.
 const map = L.map('map', {
     scrollWheelZoom: false 
 }).setView([lat, lng], 19);
@@ -114,8 +123,40 @@ marker.bindPopup(popupContent, {
     minWidth: 200,
 }).openPopup();
 
-
+// Перемикає форму contact і прокручує сторінку до її початку при відкритті.
 function toggleContactForm() {
     const contact = document.querySelector('.contact');
+    const isOpening = !contact.classList.contains('contact--active');
+
     contact.classList.toggle('contact--active');
+
+    if (isOpening) {
+      setTimeout(() => {
+        const top =
+          contact.getBoundingClientRect().top + window.pageYOffset;
+
+        window.scrollTo({
+          top: top - 100,
+          behavior: 'smooth',
+        });
+      }, 300);
+    }
 }
+
+const galleryItems = document.querySelectorAll('.gallery__item');
+const modal = document.getElementById('gallery__modal');
+const modalImg = document.getElementById('modal-img');
+
+// Відкриває вибране зображення галереї у повноекранній модалці.
+galleryItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const img = item.querySelector('.gallery__image');
+    modal.style.display = 'flex';
+    modalImg.src = img.src;
+  });
+});
+
+// Закриває повноекранну модалку галереї по кліку.
+modal.addEventListener('click', () => {
+  modal.style.display = 'none';
+})

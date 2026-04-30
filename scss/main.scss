@@ -257,6 +257,16 @@ img {
     position: relative;
   }
 
+  &__image {
+    border-radius: 6px;
+    box-shadow: 20px 20px 20px 0 #00000040;
+  }
+
+  &__image-2 {
+    border-radius: 6px;
+    box-shadow: -20px 20px 20px 0 #00000040;
+  }
+
   &__content {
     width: 470px;
   }
@@ -437,7 +447,7 @@ img {
 
 .post__card {
   background-color: #ffffff;
-  min-height: 514px;
+  max-height: 514px;
 
   &__image {
     width: 100%;
@@ -502,6 +512,9 @@ img {
 }
 
 .gallery {
+  overflow: hidden;
+  cursor: pointer;
+
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: repeat(2, minmax(180px, auto));
@@ -530,6 +543,44 @@ img {
     grid-area: gallery__item-4;
   }
 
+  &__item {
+    position: relative;
+    display: block;
+  }
+
+  &__item:hover &__overlay {
+    opacity: 1;
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      max-width: 40%;
+      max-height: 40%;
+    }
+  }
+
   &__btn {
     @extend %btn-view;
     display: block;
@@ -541,6 +592,9 @@ img {
 .pictures {
   &__content {
     max-width: 900px;
+    width: min(900px, calc(100% - 32px));
+    max-height: calc(100vh - 32px);
+    overflow-y: auto;
   }
 
   &__gallery {
